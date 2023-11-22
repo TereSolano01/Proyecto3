@@ -1,0 +1,184 @@
+.image-column {
+    width: 50%;
+    float: left;
+    margin-left: 18%;
+  }
+  
+  .title-column {
+    width: 50%;
+    float: left;
+    margin-right: 20%;
+  }
+
+  .content-section {
+    display: flex;
+    margin-bottom: 5%;
+  }
+
+  .image-and-title {
+    display: flex;
+    width: 100%;
+    margin-top: 2%;
+  }
+
+  .image-column, .title-column {
+    flex: 1;
+  }
+
+  .title-column p{
+    font-family: 'Merriweather', serif;
+    font-size: 18px;
+    margin: 0;
+  }
+
+  .info-section{
+    font-family: serif;
+    text-align: justify;
+    width: 100%;
+    margin-top: 15px;
+  }
+
+ .info-section p{
+  font-family: 'Merriweather', serif;
+  font-style: normal;
+}
+
+h4{
+    font-weight: bold;
+    text-align: center;
+    font-size: xxx-large;
+    font-variant-caps: small-caps;
+    font-family: serif;
+    margin-top: 1%;
+    margin-bottom: 0;
+}
+img{ 
+    width: 30em;
+    border-radius: 7px;
+    height: 38em;
+}
+
+li{
+  list-style: none !important;
+  padding-bottom: 7px;
+}
+
+h5{
+  font-weight: bold;
+  text-align: center;
+  font-size: 35px;
+  font-variant-caps: small-caps;
+  font-family: serif;
+  margin-top: 1%;
+  margin-bottom: 0;
+}
+
+a{
+  font-size: 18px;
+  font-family: 'Merriweather', serif;
+  font-style: italic;
+}
+ul{
+  margin-top: 5px;
+  text-align: center;
+  padding: 0;
+}
+
+
+
+
+  
+.button-50 {
+  appearance: button;
+  background-color: #000;
+  background-image: none;
+  border: 1px solid #000;
+  border-radius: 4px;
+  box-shadow: #fff 4px 4px 0 0,#000 4px 4px 0 1px;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: ITCAvantGardeStd-Bk,Arial,sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  margin: 0 5px 10px 0;
+  overflow: visible;
+  padding: 12px 40px;
+  text-align: center;
+  text-transform: none;
+  touch-action: manipulation;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+.button-50:focus {
+  text-decoration: none;
+}
+
+.button-50:hover {
+  text-decoration: none;
+}
+
+.button-50:active {
+  box-shadow: rgba(0, 0, 0, .125) 0 3px 5px inset;
+  outline: 0;
+}
+
+.button-50:not([disabled]):active {
+  box-shadow: #fff 2px 2px 0 0, #000 2px 2px 0 1px;
+  transform: translate(2px, 2px);
+}
+
+@media (min-width: 768px) {
+  .button-50 {
+    padding: 12px 50px;
+  }
+}
+
+button {
+  background: #000000;
+  border: none;
+  padding: 10px 20px;
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 600;
+  width: 120px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transform: skew(-21deg);
+  color: white;
+  margin-left: 35% !important;
+  margin-top: 25px !important;
+}
+
+span {
+  display: inline-block;
+  transform: skew(21deg);
+}
+
+button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 100%;
+  left: 0;
+  background: rgb(255, 255, 255);
+  opacity: 0;
+  z-index: -1;
+  transition: all 0.5s;
+}
+
+button:hover {
+  color: #b3b2b2;
+}
+
+button:hover::before {
+  left: 0;
+  right: 0;
+  opacity: 1;
+}
