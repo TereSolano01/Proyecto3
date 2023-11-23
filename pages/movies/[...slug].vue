@@ -38,6 +38,7 @@
                </div>
               </div>
             <div>
+              <utteranc/>
           </div>
       </div>
       <FooterView />
